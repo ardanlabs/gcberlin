@@ -20,3 +20,10 @@ spec:
     metadata:
       labels:
         app: sales
+
+    spec:
+      terminationGracePeriodSeconds: 60
+
+      containers:
+      - name: sales
+        image: sales-image
